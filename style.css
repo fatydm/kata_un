@@ -1,0 +1,29 @@
+
+/* * {
+    margin: 0;
+} */
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    font-family: 'phudu';
+    text-align: center;
+}
+
+#quoteCreation{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 15px;
+    font-family:'Times New Roman', Times, serif
+}
+
+input{
+    height: 40px;
+}
+
+.submit{
+  height: 30px;
+}
