@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Un</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Playwrite+IN:wght@100..400&display=swap" 
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Mes citations</h1>
+
+    <h2>Gestionnaire de citations en ligne</h2>
+
+    <h3>0 citations</h3>
+
+    <br>
+
+    <div id="quote-list">
+        <div class="quote">
+            <p class="text">"On ne naît pas femme, on le devient."</p>
+            <p class="author">Simone de Beauvoir</p>
+        </div>
+    </div>
+
+    <br>
+
+    <form id="quoteCreation" action="" method="POST">
+        <label for="nom">Citation</label>
+        <input type="text" id="citation" name="citation" required>
+        
+        <label for="nom">Nom de l'auteur.trice</label>
+        <input type="text" id="name" name="name" required>
+      
+        <button type="submit" class="submit">Soumettre</button>
+    </form>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
