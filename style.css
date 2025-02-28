@@ -1,29 +1,80 @@
 
-/* * {
-    margin: 0;
-} */
-
-body{
+body {
     background-color: bisque;
+    margin: auto;
+    
 }
 
-h1{
+h1 {
     font-family: 'phudu';
-    text-align: center;
+    color: brown;
+    text-decoration: underline;
+    background-color: antiquewhite;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
 
-#quoteCreation{
+img{
+    border: 5px solid brown;
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+h2 {
+    background-color: antiquewhite;
+    color: rgb(130, 50, 50);
+    text-decoration: underline;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.text {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.author {
+    font-size: 1.2em;
+}
+
+#quoteCreation {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    gap: 15px;
-    font-family:'Times New Roman', Times, serif
+    width: 50%;
+    gap: 5px;
+    font-family: 'Times New Roman', Times, serif
 }
 
-input{
-    height: 40px;
+label{
+    font-size: 1.4em;
 }
 
-.submit{
-  height: 30px;
+input {
+    height: 30px;
+    color: antiquewhite;
+    border-radius: 20px;
+    border: none
+}
+
+.submit {
+    height: 30px;
+    background-color: rgb(149, 53, 53);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid bisque
+}
+
+.submit:active {
+    color: rgb(173, 86, 86);
 }

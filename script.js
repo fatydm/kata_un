@@ -1,30 +1,35 @@
-const formQuoteCreation = document.getElementById('quoteCreation')
+const formQuoteCreation = document.getElementById('quoteCreation');
 const submitButton = document.getElementById('submit');
-const authorName = document.getElementById('name');
-const quotePosted = document.getElementById('citation');
-const divQuotes = document.getElementById('quote-list');
+const quotesUpdate = document.getElementById('quoteCount');
+
 let quoteCount = 0;
 
+formQuoteCreation.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-formQuoteCreation.addEventListener('submit', () => {
-    for (addQuote(quotePosted, authorName){
-        quoteCount +=1;
-    })
+    const authorName = document.getElementById('name').value;
+    const quotePosted = document.getElementById('citation').value;
+
+    addQuote(quotePosted, authorName);
+    quoteCount++;
+    quotesUpdate.innerText = quoteCount;
 });
 
 function addQuote(quote, author){
-    const title_h_trois = getElementById('quoteCount')
-    title_h_trois.innerText = quoteCount
+    let quoteDiv = document.createElement("div");
+    quoteDiv.classList.add('quote');
 
-    const p = document.createElement('p')
-    p.setAttribute('class', 'text')
-    div.appendChild(p)
+    const divQuotes = document.getElementById('quote-list');
 
-    const p_deux = document.createElement('p')
-    p_deux.setAttribute('class', 'text')
-    div.appendChild(p_deux)
+    const pQuote = document.createElement('p');
+    pQuote.setAttribute('class', 'text');
+    pQuote.innerText = quote;
 
-    let div = document.createElement("div");
-    div.classList.add('quote')
-    divQuotes.appendChild(div)
+    const pAuthor = document.createElement('p');
+    pAuthor.setAttribute('class', 'author');
+    pAuthor.innerText = "- " + author;
+
+    quoteDiv.appendChild(pQuote);
+    quoteDiv.appendChild(pAuthor);
+    divQuotes.appendChild(quoteDiv);
 }
