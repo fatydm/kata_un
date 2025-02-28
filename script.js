@@ -11,8 +11,13 @@ formQuoteCreation.addEventListener('submit', (event) => {
     const quotePosted = document.getElementById('citation').value;
 
     addQuote(quotePosted, authorName);
+    authorName.value= ''
+    
     quoteCount++;
     quotesUpdate.innerText = quoteCount;
+
+    
+
 });
 
 function addQuote(quote, author){
